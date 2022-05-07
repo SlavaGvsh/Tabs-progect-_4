@@ -69,7 +69,9 @@ body{
 }
 .container{
   width: 340px;
-  margin: 60px auto;
+  margin: 60px auto 30px;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
   .bg-tabs{
     background-color: #f7f7f7;
     padding: 12px 14px 0;
@@ -97,7 +99,7 @@ body{
             border-top: 4px solid #44c7f3;
             margin: -3px 0 0;
             font-weight: bold;
-
+            box-shadow: 0 2px 0 #fff;
           }
           a {
             display: block;
@@ -108,5 +110,46 @@ body{
         }
       }
     }
+  }
+  .tabs-body{
+    display: none;
+    &.active{
+      display:block;
+    }
+    .tabs-body-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 18px 18px 18px 13px;
+    border-bottom: 1px solid #e3e3e3;
+    &:last-child{
+      border-bottom: none;
+    }
+    .tabs-body-avatar{
+      display: flex;
+      img{
+        flex: 0 0 37px;
+        margin-right: 18px;
+        width: 37px;
+        height: 37px;
+        object-fit: cover;
+      }
+      .avatar-info{
+        flex: 1;
+        h2{
+          color: #6c6c6c;
+        }
+        span{
+          color: #bdbdbd;
+          font-size: 13px;
+          line-height: 16px;
+        }
+
+      }
+    }
+
+
+  }
   }
 }

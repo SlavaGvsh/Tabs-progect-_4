@@ -100,7 +100,9 @@ body {
 
 .container {
   width: 340px;
-  margin: 60px auto;
+  margin: 60px auto 30px;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
 }
 .container .bg-tabs {
   background-color: #f7f7f7;
@@ -130,12 +132,51 @@ body {
   border-top: 4px solid #44c7f3;
   margin: -3px 0 0;
   font-weight: bold;
+  box-shadow: 0 2px 0 #fff;
 }
 .container .bg-tabs .tabs ul .tabs-items a {
   display: block;
   padding: 14px 20px;
   text-align: center;
   color: #000;
+}
+.container .tabs-body {
+  display: none;
+}
+.container .tabs-body.active {
+  display: block;
+}
+.container .tabs-body .tabs-body-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 18px 18px 18px 13px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.container .tabs-body .tabs-body-items:last-child {
+  border-bottom: none;
+}
+.container .tabs-body .tabs-body-items .tabs-body-avatar {
+  display: flex;
+}
+.container .tabs-body .tabs-body-items .tabs-body-avatar img {
+  flex: 0 0 37px;
+  margin-right: 18px;
+  width: 37px;
+  height: 37px;
+  object-fit: cover;
+}
+.container .tabs-body .tabs-body-items .tabs-body-avatar .avatar-info {
+  flex: 1;
+}
+.container .tabs-body .tabs-body-items .tabs-body-avatar .avatar-info h2 {
+  color: #6c6c6c;
+}
+.container .tabs-body .tabs-body-items .tabs-body-avatar .avatar-info span {
+  color: #bdbdbd;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
