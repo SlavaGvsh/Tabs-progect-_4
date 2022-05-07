@@ -65,8 +65,48 @@ h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
 
 body{
   background-color: #efefef;
+  font: 14px/18px 'Proxima Nova Regular', sans-serif;
 }
 .container{
   width: 340px;
   margin: 60px auto;
+  .bg-tabs{
+    background-color: #f7f7f7;
+    padding: 12px 14px 0;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid #e3e3e3;
+    .tabs {
+
+      ul {
+        display: flex;
+        justify-content: center;
+        .tabs-items {
+          flex: 1;
+          max-width: 105px;
+          border: 1px solid #e3e3e3;
+          border-radius: 3px 3px 0 0;
+          border-bottom: none;
+          background-color: #ffffff;
+          &:first-child{
+            border-right: none;
+          }
+          &:last-child{
+            border-left: none;
+          }
+          &.active{
+            border-top: 4px solid #44c7f3;
+            margin: -3px 0 0;
+            font-weight: bold;
+
+          }
+          a {
+            display: block;
+            padding: 14px 20px;
+            text-align: center;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
 }
